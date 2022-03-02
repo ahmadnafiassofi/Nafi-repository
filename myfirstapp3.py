@@ -6,6 +6,6 @@ import pandas as pd
 st.header("My first Streamlit App")
 
 
-map_data = diabetes
+map_data = datasets.load_diabetes()
 
 st.map(map_data)
