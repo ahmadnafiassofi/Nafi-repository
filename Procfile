@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run myfirstapp2.py
+web: sh setup.sh && streamlit run HousePricePrediction.py.py
