@@ -29,8 +29,8 @@ with header:
 with dataset:
     st.header('How do we predict the house price?')
     st.write("We use a sophisticated method by collecting datas from 1460 houses located in Ames City, and analize the most affecting features to the the house sale prices. We study about 80 features of the houses from the house size, its contruction material, year it's build, until the neighbourhood environtment. Below is the sample of our data;")  #we use st.write instead of st.text because the text too long and read friendly in streamlit.
-    df = pd.read_csv('https://github.com/ahmadnafiassofi/Nafi-repository/blob/main/train.csv')
-    df_test= pd.read_csv('https://github.com/ahmadnafiassofi/Nafi-repository/blob/main/test.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/ahmadnafiassofi/Nafi-repository/main/train.csv')
+    df_test= pd.read_csv('https://raw.githubusercontent.com/ahmadnafiassofi/Nafi-repository/main/test.csv')
     st.write(df.head())
     
  
