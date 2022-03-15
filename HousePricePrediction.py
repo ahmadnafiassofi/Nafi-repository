@@ -23,12 +23,12 @@ modelTraining = st.container()
 
 with header:
     st.title('House Price Prediction')
-    st.write('      So you are moving to Ames City for whatever reason, and are looking for a house to buy. Or maybe you are an real estate investor who like to get better insight in housing market in this city. So we are here to help you in predicting your dream house price in Ames city, Iowa, USA')
+    st.write('      So you are moving to Ames City for whatever reason, and are looking for a house to buy. Or maybe you are a real estate investor who likes to get better insight in housing market in this city. So we are here to help you in predicting your dream house price in Ames city, Iowa, USA')
     
     
 with dataset:
     st.header('How do we predict the house price?')
-    st.write("We use a sophisticated method by collecting datas from 1460 houses located in Ames City, and analize the most affecting features to the the house sale prices. We study about 80 features of the houses from the house size, its contruction material, year it's build, until the neighbourhood environtment. Below is the sample of our data;")  #we use st.write instead of st.text because the text too long and read friendly in streamlit.
+    st.write("We use a sophisticated method by collecting datas from 1460 houses located in Ames City, and analize the most affecting features to the the house sale prices. We study about 80 features of the houses from the house size, its contruction material, year it's build, and even the neighbourhood environtment. Below is the sample of our data;")  #we use st.write instead of st.text because the text too long and read friendly in streamlit.
     df = pd.read_csv('https://raw.githubusercontent.com/ahmadnafiassofi/Nafi-repository/main/train.csv')
     df_test= pd.read_csv('https://raw.githubusercontent.com/ahmadnafiassofi/Nafi-repository/main/test.csv')
     st.write(df.head())
@@ -67,6 +67,12 @@ st.header("")
 st.header("")
 st.header("")
 
+#footer
+st.write("Made by Ahmad Nafi'")    
+st.write("Source of data: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview")
+st.write("Special thanks to Dr Yu, Dr Yan, friends and guys on stack-overflows that help me finishing this webapp.")
+st.write('#IlOVEMOHE #everybodycanfly')
+
 #input the numbers sidebar
 st.sidebar.title('Want to know your house price? Tell us its features:')
 st.sidebar.text('')
@@ -101,10 +107,6 @@ if st.sidebar.button          ("Show my house price"):
     st.sidebar.header("Fair price for your house is = {} USD ".format(int(predictions)))
     st.sidebar.subheader("Similar house are sold in your state with price ranged  {}  USD  to  {}  USD ".format(int(predictions-errors),int(predictions+errors) ))
                
-st.write("Made by Ahmad Nafi'")    
-st.write("Source of data: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview")
-st.write("Special thanks to Dr Yu, Dr Yan, friends and guys on stack-overflows that help me finishing this webapp.")
-st.write('#IlOVEMOHE #everybodycanfly')
 
 
 
