@@ -103,7 +103,7 @@ if st.sidebar.button          ("Show my house price"):
                
 st.write("Made by Ahmad Nafi'")    
 st.write("Source of data: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview")
-st.write("Credit to tutors and various coders that help me finishing this webapp.")
+st.write("Special thanks to Dr Yu, Dr Yan, friends and guys on stack-overflows that help me finishing this webapp.")
 st.write('#IlOVEMOHE #everybodycanfly')
 
 
