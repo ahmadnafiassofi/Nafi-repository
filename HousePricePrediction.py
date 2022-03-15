@@ -14,8 +14,6 @@ from sklearn import datasets
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 warnings.filterwarnings('ignore')
-#import plotly.express as px 
-    # to show plot in streamlit
 
 
 header = st.container()
